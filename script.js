@@ -26,13 +26,13 @@ if ((texto == "hola") || (texto == "Hola") || (texto == "HOLA")){
 
 
 let numero1= parseInt(prompt ("Ingrese un numero"));
-if ((numero1 >=10) && (numero1 <=50)){
+if (edad >= 0 && edad <= 17){
+    alert(numero1 +" es mayor a 0 y menor que 17. Listo!!");
+}else if (edad > 17 && edad <= 50){
+    alert(numero1 +" es mayor a 17 y menor que 50. Listo!!");
+}else if (numero1 >= 10 && numero1 <= 50){
     alert(numero1 +" es mayor a 10 y menor que 50. Listo!!");
-}else if (numero1 >=10){
-    alert("por favor ingrese otro numero, menor a 50");
-}else if (numero1 <=10){
-    alert("por favor ingrese otro numero, mayor a 10");
-}else if (numero1 >=50){
-    alert("por favor ingrese otro numero, menor a 50");
+}else if (numero1 >= 10){
+    alert(numero1,"es mayor a 10. Por favor ingrese otro numero, menor a 50");
 }
 
